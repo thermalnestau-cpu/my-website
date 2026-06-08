@@ -656,54 +656,10 @@
     </div>
     <div class="contact-form">
       <h2>Request a Free Quote</h2>
-      <div id="inquiry-form">
-        <div class="form-row">
-          <div class="form-group"><label>First Name *</label><input type="text" id="fname" placeholder="John" required /></div>
-          <div class="form-group"><label>Last Name *</label><input type="text" id="lname" placeholder="Smith" required /></div>
-        </div>
-        <div class="form-group"><label>Email Address *</label><input type="email" id="email" placeholder="john@email.com" required /></div>
-        <div class="form-group"><label>Phone Number</label><input type="tel" id="phone" placeholder="04XX XXX XXX" /></div>
-        <div class="form-group">
-          <label>State / Territory *</label>
-          <select id="state">
-            <option value="">Select your state...</option>
-            <option>NSW</option><option>VIC</option><option>QLD</option><option>WA</option>
-            <option>SA</option><option>TAS</option><option>ACT</option><option>NT</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label>Service Required *</label>
-          <select id="service">
-            <option value="">Select a service...</option>
-            <option>BASIX Certificate</option>
-            <option>NatHERS Assessment</option>
-            <option>Sustainable Design Assessment</option>
-            <option>Whole of Home (WoH) Assessment</option>
-            <option>BESS Assessment & Report</option>
-            <option>Not Sure — Need Guidance</option>
-          </select>
-        </div>
-        <div class="form-group"><label>Project Details</label><textarea id="message" placeholder="Briefly describe your project — type of dwelling, location, stage of design, any urgent deadlines..."></textarea></div>
-        <div class="form-group">
-          <label>Upload Plans / Documents <span style="font-weight:400;color:var(--muted)">(optional, max 10MB)</span></label>
-          <div class="file-upload-area" id="fileUploadArea" onclick="document.getElementById('fileInput').click()">
-            <input type="file" id="fileInput" accept=".pdf,.dwg,.dxf,.jpg,.jpeg,.png,.doc,.docx,.zip" style="display:none" onchange="handleFileSelect(this)" />
-            <div class="file-upload-icon">📎</div>
-            <div class="file-upload-text">Click to upload or drag & drop</div>
-            <div class="file-upload-sub">PDF, DWG, DXF, JPG, PNG, DOC, ZIP — up to 10MB</div>
-          </div>
-          <div id="fileSelected" style="display:none; margin-top:8px; padding:10px 14px; background:rgba(82,183,136,0.08); border:1px solid rgba(82,183,136,0.25); border-radius:8px; font-size:0.85rem; color:var(--leaf); display:none; align-items:center; gap:8px;">
-            <span>📄</span><span id="fileName"></span>
-            <button onclick="clearFile()" style="margin-left:auto;background:none;border:none;cursor:pointer;color:var(--muted);font-size:1rem;">✕</button>
-          </div>
-          <div id="fileError" style="display:none; margin-top:6px; font-size:0.82rem; color:#c0392b;"></div>
-        </div>
-        <button class="form-submit" onclick="submitForm()">Send Enquiry →</button>
-      </div>
-      <div class="form-success" id="form-success">
-        <div class="check">✅</div>
-        <h3>Enquiry Received!</h3>
-        <p>Thank you — we'll review your project and get back to you within one business day.</p>
+      <!-- HubSpot Form -->
+      <div class="hs-form-wrap">
+        <script src="https://js-ap1.hsforms.net/forms/embed/443284844.js" defer></script>
+        <div class="hs-form-frame" data-region="ap1" data-form-id="3326bf91-875a-4a68-89e6-1a8149ab9c01" data-portal-id="443284844"></div>
       </div>
     </div>
   </div>
