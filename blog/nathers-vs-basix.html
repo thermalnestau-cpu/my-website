@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NatHERS vs BASIX: What's the Difference? | Thermal Nest</title>
+  <meta name="description" content="NatHERS and BASIX aren't the same thing. Learn the key differences, when you need each, and when your project needs both." />
+  <meta name="keywords" content="NatHERS vs BASIX, NatHERS assessment, BASIX certificate, difference between NatHERS and BASIX, thermal performance rating NSW, energy rating home" />
+  <link rel="canonical" href="https://thermalnest.com.au/blog/nathers-vs-basix.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="NatHERS vs BASIX: What's the Difference and Do You Need Both?" />
+  <meta property="og:description" content="Two certificates, constantly confused. Here's what NatHERS and BASIX actually measure, and when your project needs one, the other, or both." />
+  <meta property="og:url" content="https://thermalnest.com.au/blog/nathers-vs-basix.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="https://thermalnest.com.au/office-lady.png" />
+  <meta property="article:published_time" content="2026-07-14" />
+  <meta property="article:author" content="Thermal Nest" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="NatHERS vs BASIX: What's the Difference and Do You Need Both?" />
+  <meta name="twitter:description" content="Two certificates, constantly confused. Here's what NatHERS and BASIX actually measure, and when your project needs one, the other, or both." />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+  <!-- Schema.org BlogPosting markup for SEO + AI search -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "NatHERS vs BASIX: What's the Difference and Do You Need Both?",
+    "description": "NatHERS and BASIX aren't the same thing. Learn the key differences, when you need each, and when your project needs both.",
+    "image": "https://thermalnest.com.au/office-lady.png",
+    "author": { "@type": "Organization", "name": "Thermal Nest", "url": "https://thermalnest.com.au" },
+    "publisher": { "@type": "Organization", "name": "Thermal Nest", "logo": { "@type": "ImageObject", "url": "https://thermalnest.com.au/office-lady.png" } },
+    "datePublished": "2026-07-14",
+    "dateModified": "2026-07-14",
+    "mainEntityOfPage": "https://thermalnest.com.au/blog/nathers-vs-basix.html",
+    "keywords": ["NatHERS", "BASIX", "energy rating", "thermal performance", "NSW building compliance", "home energy assessment"]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --forest:   #1a3a2a;
+      --leaf:     #2d6a4f;
+      --sage:     #52b788;
+      --mint:     #95d5b2;
+      --cream:    #f8f4ec;
+      --sand:     #e9dcc9;
+      --charcoal: #1e2420;
+      --white:    #ffffff;
+      --text:     #2c3a30;
+      --muted:    #6b7c72;
+      --font-display: 'Playfair Display', Georgia, serif;
+      --font-body: 'DM Sans', sans-serif;
+      --transition: all 0.3s ease;
+    }
+
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--font-body); color: var(--text); background: var(--cream); overflow-x: hidden; line-height: 1.7; }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      padding: 0 5%; height: 70px;
+      display: flex; align-items: center; justify-content: space-between;
+      background: rgba(248,244,236,0.95); backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(45,106,79,0.1);
+    }
+    .nav-logo { font-family: var(--font-display); font-size: 1.4rem; font-weight: 700; color: var(--forest); text-decoration: none; }
+    .nav-logo span { color: var(--sage); }
+    .nav-back { display: inline-flex; align-items: center; gap: 6px; font-size: 0.85rem; font-weight: 600; color: var(--leaf); text-decoration: none; transition: var(--transition); }
+    .nav-back:hover { gap: 10px; }
+    .nav-cta { background: var(--leaf); color: var(--white); padding: 9px 20px; border-radius: 100px; font-size: 0.85rem; font-weight: 600; text-decoration: none; transition: var(--transition); }
+    .nav-cta:hover { background: var(--forest); }
+
+    /* ── HERO BANNER ── */
+    .blog-hero {
+      margin-top: 70px;
+      padding: 70px 5% 60px;
+      background: linear-gradient(160deg, var(--forest) 0%, var(--leaf) 100%);
+      position: relative; overflow: hidden;
+    }
+    .blog-hero::before {
+      content: '';
+      position: absolute; top: -120px; right: -120px;
+      width: 500px; height: 500px; border-radius: 50%;
+      background: rgba(82,183,136,0.1);
+    }
+    .blog-hero::after {
+      content: '';
+      position: absolute; bottom: -80px; left: 10%;
+      width: 280px; height: 280px; border-radius: 50%;
+      background: rgba(82,183,136,0.06);
+    }
+    .blog-hero-inner { max-width: 780px; position: relative; z-index: 1; }
+    .blog-meta-top {
+      display: flex; align-items: center; gap: 12px;
+      margin-bottom: 1.5rem; flex-wrap: wrap;
+    }
+    .blog-cat-tag {
+      background: rgba(82,183,136,0.2); border: 1px solid rgba(82,183,136,0.35);
+      color: var(--mint); font-size: 0.72rem; font-weight: 700;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      padding: 5px 14px; border-radius: 100px;
+    }
+    .blog-read-time { font-size: 0.82rem; color: rgba(255,255,255,0.55); }
+    .blog-date-top { font-size: 0.82rem; color: rgba(255,255,255,0.45); }
+    .blog-hero h1 {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 4.5vw, 3.2rem);
+      font-weight: 700; line-height: 1.15;
+      color: var(--white); letter-spacing: -0.02em;
+      margin-bottom: 1.2rem;
+    }
+    .blog-hero-intro {
+      font-size: 1.1rem; color: rgba(255,255,255,0.75);
+      line-height: 1.75; max-width: 620px;
+    }
+    .blog-author-row {
+      display: flex; align-items: center; gap: 12px;
+      margin-top: 2.5rem; padding-top: 2rem;
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+    .author-avatar {
+      width: 42px; height: 42px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--sage), var(--leaf));
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1rem; font-weight: 700; color: var(--white);
+      flex-shrink: 0;
+    }
+    .author-info strong { display: block; font-size: 0.88rem; color: var(--white); }
+    .author-info span { font-size: 0.78rem; color: rgba(255,255,255,0.5); }
+
+    /* ── LAYOUT ── */
+    .blog-layout {
+      max-width: 1100px; margin: 0 auto;
+      display: grid; grid-template-columns: 1fr 300px;
+      gap: 4rem; padding: 60px 5%;
+      align-items: start;
+    }
+
+    /* ── ARTICLE BODY ── */
+    .article-body {}
+    .article-body h2 {
+      font-family: var(--font-display);
+      font-size: 1.65rem; font-weight: 700;
+      color: var(--forest); line-height: 1.25;
+      margin: 2.8rem 0 1rem;
+      letter-spacing: -0.02em;
+    }
+    .article-body h3 {
+      font-family: var(--font-display);
+      font-size: 1.2rem; font-weight: 600;
+      color: var(--leaf); margin: 2rem 0 0.75rem;
+    }
+    .article-body p {
+      font-size: 1.02rem; color: var(--text);
+      line-height: 1.82; margin-bottom: 1.3rem;
+    }
+    .article-body p:first-child { font-size: 1.08rem; }
+    .article-body strong { color: var(--forest); font-weight: 600; }
+    .article-body a { color: var(--leaf); text-decoration: underline; text-decoration-color: rgba(82,183,136,0.4); transition: var(--transition); }
+    .article-body a:hover { color: var(--sage); }
+
+    /* pull quote */
+    .pull-quote {
+      border-left: 4px solid var(--sage);
+      padding: 1.2rem 1.5rem;
+      margin: 2rem 0;
+      background: rgba(82,183,136,0.06);
+      border-radius: 0 12px 12px 0;
+    }
+    .pull-quote p {
+      font-family: var(--font-display);
+      font-size: 1.15rem !important;
+      font-style: italic;
+      color: var(--forest) !important;
+      margin: 0 !important;
+      line-height: 1.65 !important;
+    }
+
+    /* callout box */
+    .callout {
+      background: var(--white);
+      border: 1px solid rgba(82,183,136,0.2);
+      border-radius: 16px;
+      padding: 1.8rem 2rem;
+      margin: 2rem 0;
+      position: relative; overflow: hidden;
+    }
+    .callout::before {
+      content: '';
+      position: absolute; top: 0; left: 0; right: 0; height: 3px;
+      background: linear-gradient(90deg, var(--sage), var(--mint));
+    }
+    .callout-label {
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em;
+      text-transform: uppercase; color: var(--sage); margin-bottom: 0.8rem;
+    }
+    .callout h3 {
+      font-family: var(--font-display); font-size: 1.05rem;
+      color: var(--forest); margin: 0 0 0.8rem !important;
+    }
+    .callout ul { list-style: none; padding: 0; margin: 0; }
+    .callout ul li {
+      font-size: 0.92rem; color: var(--text);
+      padding: 0.45rem 0; border-bottom: 1px solid rgba(82,183,136,0.1);
+      display: flex; align-items: flex-start; gap: 10px; line-height: 1.5;
+    }
+    .callout ul li:last-child { border-bottom: none; }
+    .callout ul li::before {
+      content: '';
+      width: 18px; height: 18px; flex-shrink: 0; margin-top: 1px;
+      background: rgba(82,183,136,0.12) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2352b788' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E") center/11px no-repeat;
+      border-radius: 50%;
+    }
+
+    /* fact card */
+    .fact-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 1rem; margin: 2rem 0; }
+    .fact-card {
+      background: var(--white); border-radius: 14px;
+      padding: 1.4rem 1.2rem;
+      border: 1px solid rgba(82,183,136,0.15);
+      text-align: center;
+    }
+    .fact-card .num {
+      font-family: var(--font-display); font-size: 2rem; font-weight: 700;
+      color: var(--sage); line-height: 1;
+    }
+    .fact-card .label { font-size: 0.8rem; color: var(--muted); margin-top: 4px; line-height: 1.4; }
+
+    /* step list */
+    .step-list { list-style: none; padding: 0; margin: 1.5rem 0; }
+    .step-list li {
+      display: flex; gap: 1rem; margin-bottom: 1.2rem; align-items: flex-start;
+    }
+    .step-num {
+      width: 32px; height: 32px; flex-shrink: 0;
+      background: var(--forest); color: var(--white);
+      border-radius: 50%; display: flex; align-items: center; justify-content: center;
+      font-size: 0.82rem; font-weight: 700; margin-top: 2px;
+    }
+    .step-text { font-size: 0.98rem; color: var(--text); line-height: 1.7; }
+    .step-text strong { color: var(--forest); }
+
+    /* divider */
+    .article-divider {
+      height: 1px; background: linear-gradient(90deg, transparent, rgba(82,183,136,0.25), transparent);
+      margin: 2.5rem 0;
+    }
+
+    /* CTA block */
+    .article-cta {
+      background: linear-gradient(135deg, var(--forest), var(--leaf));
+      border-radius: 20px; padding: 2.5rem;
+      text-align: center; margin-top: 3rem;
+    }
+    .article-cta h3 {
+      font-family: var(--font-display); font-size: 1.5rem;
+      color: var(--white); margin-bottom: 0.75rem;
+    }
+    .article-cta p { font-size: 0.95rem; color: rgba(255,255,255,0.72); margin-bottom: 1.5rem; }
+    .btn-cta {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--sage); color: var(--forest);
+      padding: 13px 28px; border-radius: 100px;
+      font-weight: 700; font-size: 0.92rem; text-decoration: none;
+      transition: var(--transition);
+    }
+    .btn-cta:hover { background: var(--mint); transform: translateY(-2px); }
+
+    /* tags */
+    .article-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 2.5rem; }
+    .article-tag {
+      background: rgba(82,183,136,0.1); color: var(--leaf);
+      border: 1px solid rgba(82,183,136,0.2);
+      font-size: 0.78rem; font-weight: 600; padding: 5px 14px; border-radius: 100px;
+    }
+
+    /* share row */
+    .share-row {
+      display: flex; align-items: center; gap: 12px;
+      margin-top: 1.5rem; padding-top: 1.5rem;
+      border-top: 1px solid rgba(82,183,136,0.15);
+    }
+    .share-label { font-size: 0.82rem; font-weight: 600; color: var(--muted); }
+    .share-btn {
+      padding: 7px 16px; border-radius: 100px;
+      font-size: 0.78rem; font-weight: 600;
+      border: 1px solid rgba(82,183,136,0.25);
+      color: var(--leaf); background: transparent;
+      cursor: pointer; transition: var(--transition); text-decoration: none;
+    }
+    .share-btn:hover { background: var(--leaf); color: var(--white); border-color: var(--leaf); }
+
+    /* ── SIDEBAR ── */
+    .sidebar { position: sticky; top: 90px; }
+    .sidebar-card {
+      background: var(--white); border-radius: 16px;
+      padding: 1.5rem; border: 1px solid rgba(82,183,136,0.12);
+      margin-bottom: 1.5rem;
+    }
+    .sidebar-card h4 {
+      font-family: var(--font-display); font-size: 0.95rem;
+      color: var(--forest); margin-bottom: 1rem; font-weight: 700;
+    }
+    .toc-list { list-style: none; padding: 0; }
+    .toc-list li { margin-bottom: 0.5rem; }
+    .toc-list a {
+      font-size: 0.84rem; color: var(--muted); text-decoration: none;
+      display: flex; align-items: flex-start; gap: 8px;
+      transition: color 0.2s; line-height: 1.4; padding: 4px 0;
+    }
+    .toc-list a::before {
+      content: '—'; color: var(--sage); font-size: 0.7rem;
+      flex-shrink: 0; margin-top: 2px;
+    }
+    .toc-list a:hover { color: var(--leaf); }
+
+    .sidebar-services li {
+      list-style: none; padding: 0.5rem 0;
+      border-bottom: 1px solid rgba(82,183,136,0.1);
+      font-size: 0.86rem; color: var(--text);
+    }
+    .sidebar-services li:last-child { border-bottom: none; }
+    .sidebar-services li::before { content: '→ '; color: var(--sage); font-weight: 700; }
+
+    .sidebar-cta-card {
+      background: linear-gradient(135deg, var(--forest), var(--leaf));
+      border-radius: 16px; padding: 1.5rem; text-align: center;
+    }
+    .sidebar-cta-card h4 { font-family: var(--font-display); font-size: 1rem; color: var(--white); margin-bottom: 0.6rem; }
+    .sidebar-cta-card p { font-size: 0.82rem; color: rgba(255,255,255,0.65); margin-bottom: 1.2rem; line-height: 1.6; }
+    .btn-sidebar {
+      display: block; background: var(--sage); color: var(--forest);
+      padding: 10px 16px; border-radius: 100px; font-size: 0.84rem;
+      font-weight: 700; text-decoration: none; transition: var(--transition);
+    }
+    .btn-sidebar:hover { background: var(--mint); }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--charcoal); padding: 40px 5%;
+      display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem;
+    }
+    footer p { color: rgba(255,255,255,0.4); font-size: 0.82rem; }
+    .footer-logo { font-family: var(--font-display); font-size: 1.2rem; font-weight: 700; color: var(--white); text-decoration: none; }
+    .footer-logo span { color: var(--sage); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 860px) {
+      .blog-layout { grid-template-columns: 1fr; gap: 2rem; padding: 40px 5%; }
+      .sidebar { position: static; }
+      .fact-grid { grid-template-columns: repeat(2,1fr); }
+      nav .nav-cta { display: none; }
+    }
+    @media (max-width: 500px) {
+      .fact-grid { grid-template-columns: 1fr 1fr; }
+      .blog-hero h1 { font-size: 1.8rem; }
+    }
+
+    /* ── REVEAL ANIMATION ── */
+    .reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="/index.html" class="nav-logo">Thermal<span>Nest</span></a>
+  <a href="/blog/index.html" class="nav-back">← Back to Blog</a>
+  <a href="/contact.html" class="nav-cta">Get a Free Quote</a>
+</nav>
+
+<!-- HERO -->
+<div class="blog-hero">
+  <div class="blog-hero-inner">
+    <div class="blog-meta-top">
+      <span class="blog-cat-tag">NatHERS</span>
+      <span class="blog-read-time">6 min read</span>
+      <span class="blog-date-top">July 2026</span>
+    </div>
+    <h1>NatHERS vs BASIX: What's the Difference and Do You Need Both?</h1>
+    <p class="blog-hero-intro">Two certificates, one building project, and a lot of confusion. Here's what NatHERS and BASIX actually measure, how they relate to each other, and when your project needs one, the other, or both.</p>
+    <div class="blog-author-row">
+      <div class="author-avatar">TN</div>
+      <div class="author-info">
+        <strong>Thermal Nest</strong>
+        <span>Accredited ESD Consultants · Australia</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MAIN LAYOUT -->
+<div class="blog-layout">
+
+  <!-- ARTICLE -->
+  <article class="article-body">
+
+    <p>If you've spent any time researching building approvals, you've probably seen "NatHERS" and "BASIX" mentioned in the same breath — sometimes even used interchangeably. They're not the same thing, and mixing them up can cost you time at DA stage.</p>
+
+    <p>Both deal with how well your home performs thermally. Both involve an accredited assessor and a certificate you'll need before construction. But they're run by different bodies, cover different ground, and apply in different places. Here's the plain-English version.</p>
+
+    <h2 id="what-is-nathers">What is NatHERS?</h2>
+
+    <p>NatHERS stands for the <strong>Nationwide House Energy Rating Scheme</strong>. It's a national system — used in every state and territory — that rates the thermal performance of a home's building fabric on a scale of <strong>0 to 10 stars</strong>.</p>
+
+    <p>A NatHERS assessment looks purely at how well the building shell holds a comfortable temperature without mechanical heating or cooling: wall and ceiling insulation, window glazing and orientation, floor construction, shading, and airflow. An accredited assessor feeds your architectural drawings into approved modelling software, which simulates your home's performance against the local climate zone.</p>
+
+    <p>The higher the star rating, the less energy your home needs to stay comfortable year-round. Since the <strong>NCC 2022</strong> update, most new homes across Australia need a minimum <strong>7-star NatHERS rating</strong> as part of the Whole of Home requirements.</p>
+
+    <h2 id="what-is-basix">What is BASIX, again?</h2>
+
+    <p>BASIX — the <strong>Building Sustainability Index</strong> — is a NSW-specific requirement. It's broader than NatHERS: alongside thermal comfort, it also assesses energy use (appliances, hot water, lighting) and water consumption (fixtures, rainwater tanks, landscaping). We've covered <a href="/blog/what-is-basix.html">what BASIX is in detail here</a> if you want the full picture.</p>
+
+    <p>Where NatHERS produces a star rating, BASIX produces a pass/fail outcome against a set of index targets, generated through the NSW Planning Portal's online tool.</p>
+
+    <div class="pull-quote">
+      <p>"NatHERS asks: how good is the building itself at staying comfortable? BASIX asks: how sustainably does the whole home operate — energy, water, and comfort combined?"</p>
+    </div>
+
+    <h2 id="key-differences">The key differences at a glance</h2>
+
+    <div class="callout">
+      <div class="callout-label">NatHERS vs BASIX</div>
+      <ul>
+        <li><strong>Coverage</strong> — NatHERS is national. BASIX applies in NSW only.</li>
+        <li><strong>Scope</strong> — NatHERS measures thermal performance only. BASIX covers thermal comfort, energy, and water together.</li>
+        <li><strong>Output</strong> — NatHERS gives a star rating (0–10). BASIX gives a pass/fail certificate.</li>
+        <li><strong>Governing body</strong> — NatHERS is administered federally. BASIX is run by the NSW Government.</li>
+        <li><strong>Where they overlap</strong> — In NSW, a NatHERS assessment can satisfy the thermal comfort component of your BASIX certificate.</li>
+      </ul>
+    </div>
+
+    <div class="fact-grid">
+      <div class="fact-card">
+        <div class="num">0–10</div>
+        <div class="label">Star rating scale used by NatHERS</div>
+      </div>
+      <div class="fact-card">
+        <div class="num">7-star</div>
+        <div class="label">Minimum NatHERS rating now required under NCC 2022 for most new homes</div>
+      </div>
+      <div class="fact-card">
+        <div class="num">48 hrs</div>
+        <div class="label">Typical Thermal Nest turnaround for both certificate types</div>
+      </div>
+      <div class="fact-card">
+        <div class="num">2004</div>
+        <div class="label">Year BASIX became mandatory across NSW</div>
+      </div>
+    </div>
+
+    <h2 id="do-you-need-both">Do you need both?</h2>
+
+    <p>This depends entirely on where you're building and what you're building.</p>
+
+    <ul class="step-list">
+      <li>
+        <div class="step-num">1</div>
+        <div class="step-text"><strong>Building in NSW?</strong> You'll almost certainly need both. Your BASIX certificate is mandatory for the DA or CDC, and its thermal comfort component is typically satisfied by a NatHERS assessment.</div>
+      </li>
+      <li>
+        <div class="step-num">2</div>
+        <div class="step-text"><strong>Building outside NSW?</strong> BASIX doesn't apply — but NatHERS almost certainly does, either directly through your state's planning requirements or as part of the national Whole of Home pathway under NCC 2022.</div>
+      </li>
+      <li>
+        <div class="step-num">3</div>
+        <div class="step-text"><strong>Doing a major renovation in NSW?</strong> If the works are valued over the BASIX threshold, you'll need a BASIX certificate, and a NatHERS assessment is often the most flexible way to meet the thermal target.</div>
+      </li>
+      <li>
+        <div class="step-num">4</div>
+        <div class="step-text"><strong>Working on a multi-unit development?</strong> Both schemes apply to duplexes, townhouses, and apartment buildings, with targets adjusted for the dwelling type.</div>
+      </li>
+    </ul>
+
+    <div class="article-divider"></div>
+
+    <h2 id="how-they-work-together">How NatHERS and BASIX work together</h2>
+
+    <p>In practice, most NSW projects run through both processes as a single package. Your assessor models your home's thermal performance once, then uses that output to satisfy the BASIX thermal comfort commitment while also generating your NatHERS star rating certificate for construction compliance.</p>
+
+    <p>That means you don't necessarily pay for two separate, disconnected assessments — a good assessor coordinates the two so the same drawings and modelling work do double duty. It also means design changes need to be checked against both outcomes at once: a window swap that helps your NatHERS star rating might affect a BASIX water or energy target, and vice versa.</p>
+
+    <div class="callout">
+      <div class="callout-label">Watch Out For These</div>
+      <ul>
+        <li><strong>Assuming one certificate covers everything</strong> — In NSW, BASIX is the mandatory lodgement document. A NatHERS rating alone won't satisfy your DA requirements on its own.</li>
+        <li><strong>Getting them from assessors who aren't accredited for both</strong> — Not every assessor holds accreditation for both schemes. Confirm before you commission the work.</li>
+        <li><strong>Changing plans after certification</strong> — Altering windows, insulation, or orientation after either certificate is issued can invalidate both, not just one.</li>
+        <li><strong>Assuming interstate rules mirror NSW</strong> — Outside NSW, there's no BASIX equivalent — don't budget for a certificate you won't need, but don't skip NatHERS either.</li>
+      </ul>
+    </div>
+
+    <h2 id="bottom-line">The bottom line</h2>
+
+    <p>NatHERS and BASIX aren't competing systems — they're different lenses on the same goal: a home that's comfortable to live in and cheaper to run. NatHERS zooms in on the building fabric alone. BASIX zooms out to energy and water use across the whole home, and applies specifically in NSW.</p>
+
+    <p>If you're building or renovating in NSW, plan for both from the start rather than treating them as separate hurdles. Get your assessor involved early, and the same set of drawings can carry you through both processes without duplicated work or last-minute redesigns.</p>
+
+    <p>At Thermal Nest, we handle NatHERS and BASIX together as standard, coordinating both from the one set of plans. If you've got a project coming up and aren't sure which certificates you need, get in touch — we'll tell you exactly what applies before you commit to anything.</p>
+
+    <div class="article-cta">
+      <h3>Not Sure Which Certificate You Need?</h3>
+      <p>We'll assess your project and tell you exactly what's required. Fast turnaround, accredited nationwide.</p>
+      <a href="/contact.html" class="btn-cta">Request a Free Quote →</a>
+    </div>
+
+    <div class="article-tags">
+      <span class="article-tag">NatHERS</span>
+      <span class="article-tag">BASIX</span>
+      <span class="article-tag">NCC 2022</span>
+      <span class="article-tag">Whole of Home</span>
+      <span class="article-tag">Energy Rating</span>
+      <span class="article-tag">ESD</span>
+    </div>
+
+    <div class="share-row">
+      <span class="share-label">Share this article:</span>
+      <a class="share-btn" href="https://www.linkedin.com/sharing/share-offsite/?url=https://thermalnest.com.au/blog/nathers-vs-basix.html" target="_blank">LinkedIn</a>
+      <a class="share-btn" href="https://www.facebook.com/sharer/sharer.php?u=https://thermalnest.com.au/blog/nathers-vs-basix.html" target="_blank">Facebook</a>
+      <button class="share-btn" onclick="navigator.clipboard.writeText(window.location.href); this.textContent='Copied!'; setTimeout(()=>this.textContent='Copy Link',2000)">Copy Link</button>
+    </div>
+
+  </article>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+
+    <div class="sidebar-card">
+      <h4>In This Article</h4>
+      <ul class="toc-list">
+        <li><a href="#what-is-nathers">What is NatHERS?</a></li>
+        <li><a href="#what-is-basix">What is BASIX, again?</a></li>
+        <li><a href="#key-differences">Key differences at a glance</a></li>
+        <li><a href="#do-you-need-both">Do you need both?</a></li>
+        <li><a href="#how-they-work-together">How they work together</a></li>
+        <li><a href="#bottom-line">The bottom line</a></li>
+      </ul>
+    </div>
+
+    <div class="sidebar-cta-card">
+      <h4>Need NatHERS or BASIX?</h4>
+      <p>48-hour turnaround. Accredited nationwide. 100% approval rate.</p>
+      <a href="/contact.html" class="btn-sidebar">Get a Free Quote →</a>
+    </div>
+
+    <div class="sidebar-card" style="margin-top:1.5rem">
+      <h4>Our Services</h4>
+      <ul class="sidebar-services">
+        <li>BASIX Certificate</li>
+        <li>NatHERS Assessment</li>
+        <li>Sustainable Design</li>
+        <li>Whole of Home (WoH)</li>
+        <li>BESS Reports</li>
+      </ul>
+    </div>
+
+  </aside>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <a href="/index.html" class="footer-logo">Thermal<span>Nest</span></a>
+  <p>© 2026 Thermal Nest. Accredited ESD Consultants — Nationwide Australia.</p>
+  <p>hello@thermalnest.com.au</p>
+</footer>
+
+<script>
+  // Scroll reveal
+  const revealEls = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  revealEls.forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
