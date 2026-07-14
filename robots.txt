@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://thermalnest.com.au/sitemap.xml

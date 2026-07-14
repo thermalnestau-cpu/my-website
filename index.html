@@ -3,13 +3,48 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Thermal Nest | Building Better. Living Greener. Certified Faster.</title>
+  <title>Thermal Nest | Accredited ESD Consultants Australia</title>
   <meta name="description" content="Thermal Nest is an accredited ESD consultancy providing BASIX, NatHERS, Sustainable Design, Whole of Home and BESS assessments nationwide across Australia." />
   <meta name="keywords" content="ESD consultant Australia, BASIX certificate, NatHERS assessment, energy compliance, sustainable design, whole of home assessment, BESS report, nationwide" />
+  <link rel="canonical" href="https://thermalnest.com.au/" />
+
+  <!-- Open Graph -->
   <meta property="og:title" content="Thermal Nest | Accredited ESD Consultants Australia" />
   <meta property="og:description" content="Building Better. Living Greener. Certified Faster. Accredited ESD consultants delivering energy compliance certificates nationwide." />
+  <meta property="og:url" content="https://thermalnest.com.au/" />
   <meta property="og:type" content="website" />
-  <link rel="canonical" href="https://thermalnest.com.au/" />
+  <meta property="og:image" content="https://thermalnest.com.au/office-lady.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Thermal Nest | Accredited ESD Consultants Australia" />
+  <meta name="twitter:description" content="Building Better. Living Greener. Certified Faster. Accredited ESD consultants delivering energy compliance certificates nationwide." />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+  <!-- Schema: ProfessionalService -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Thermal Nest",
+    "description": "Accredited ESD consultancy providing BASIX, NatHERS, BESS, SDA and Whole of Home assessments across Australia.",
+    "url": "https://thermalnest.com.au",
+    "email": "hello@thermalnest.com.au",
+    "telephone": "+61481361912",
+    "areaServed": { "@type": "Country", "name": "Australia" },
+    "serviceType": [
+      "BASIX Certificate",
+      "NatHERS Assessment",
+      "Sustainable Design Assessment",
+      "Whole of Home Assessment",
+      "BESS Assessment"
+    ],
+    "slogan": "Building Better. Living Greener. Certified Faster."
+  }
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -753,40 +788,4 @@
       area.addEventListener('dragleave', () => area.classList.remove('dragover'));
       area.addEventListener('drop', e => {
         e.preventDefault(); area.classList.remove('dragover');
-        const file = e.dataTransfer.files[0];
-        if (file) {
-          const dt = new DataTransfer(); dt.items.add(file);
-          const input = document.getElementById('fileInput');
-          input.files = dt.files;
-          handleFileSelect(input);
-        }
-      });
-    }
-    initReveal();
-  });
-
-  function submitForm() {
-    const fname = document.getElementById('fname').value.trim();
-    const email = document.getElementById('email').value.trim();
-    const service = document.getElementById('service').value;
-    if (!fname || !email || !service) { alert('Please fill in your name, email, and select a service.'); return; }
-    const formData = {
-      name: fname + ' ' + document.getElementById('lname').value,
-      email, phone: document.getElementById('phone').value,
-      state: document.getElementById('state').value,
-      service, message: document.getElementById('message').value,
-      _replyto: email,
-      _subject: 'New Enquiry – ' + service + ' | Thermal Nest'
-    };
-    fetch('https://formspree.io/f/YOUR_FORM_ID', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-      body: JSON.stringify(formData)
-    }).finally(() => {
-      document.getElementById('inquiry-form').style.display = 'none';
-      document.getElementById('form-success').style.display = 'block';
-    });
-  }
-</script>
-</body>
-</html>
+        const file = e.dataTransfer.file
