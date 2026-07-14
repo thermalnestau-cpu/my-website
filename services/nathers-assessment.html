@@ -3,44 +3,73 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Thermal Nest | Accredited ESD Consultants Australia</title>
-  <meta name="description" content="Thermal Nest is an accredited ESD consultancy providing BASIX, NatHERS, Sustainable Design, Whole of Home and BESS assessments nationwide across Australia." />
-  <link rel="canonical" href="https://thermalnest.com.au/" />
+  <title>NatHERS Assessment | Thermal Nest</title>
+  <meta name="description" content="Accredited NatHERS star rating assessments for new homes and renovations Australia-wide, using AccuRate and FirstRate5 software." />
+  <link rel="canonical" href="https://thermalnest.com.au/services/nathers-assessment.html" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Thermal Nest | Accredited ESD Consultants Australia" />
-  <meta property="og:description" content="Thermal Nest is an accredited ESD consultancy providing BASIX, NatHERS, Sustainable Design, Whole of Home and BESS assessments nationwide across Australia." />
-  <meta property="og:url" content="https://thermalnest.com.au/" />
+  <meta property="og:title" content="NatHERS Assessment | Thermal Nest" />
+  <meta property="og:description" content="Accredited NatHERS star rating assessments for new homes and renovations Australia-wide, using AccuRate and FirstRate5 software." />
+  <meta property="og:url" content="https://thermalnest.com.au/services/nathers-assessment.html" />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://thermalnest.com.au/office-lady.png" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Thermal Nest | Accredited ESD Consultants Australia" />
-  <meta name="twitter:description" content="Thermal Nest is an accredited ESD consultancy providing BASIX, NatHERS, Sustainable Design, Whole of Home and BESS assessments nationwide across Australia." />
+  <meta name="twitter:title" content="NatHERS Assessment | Thermal Nest" />
+  <meta name="twitter:description" content="Accredited NatHERS star rating assessments for new homes and renovations Australia-wide, using AccuRate and FirstRate5 software." />
 
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
-  <!-- Schema: ProfessionalService -->
+  <!-- Schema: Service -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": "Thermal Nest",
-    "description": "Accredited ESD consultancy providing BASIX, NatHERS, BESS, SDA and Whole of Home assessments across Australia.",
-    "url": "https://thermalnest.com.au",
-    "email": "hello@thermalnest.com.au",
-    "telephone": "+61481361912",
+    "@type": "Service",
+    "serviceType": "NatHERS Assessment",
+    "provider": {
+      "@type": "ProfessionalService",
+      "name": "Thermal Nest",
+      "url": "https://thermalnest.com.au"
+    },
     "areaServed": { "@type": "Country", "name": "Australia" },
-    "serviceType": [
-      "BASIX Certificate",
-      "NatHERS Assessment",
-      "Sustainable Design Assessment",
-      "Whole of Home Assessment",
-      "BESS Assessment"
-    ],
-    "slogan": "Building Better. Living Greener. Certified Faster."
+    "description": "Nationwide House Energy Rating Scheme (NatHERS) thermal performance assessments for residential projects across Australia."
+  }
+  </script>
+
+  <!-- Schema: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What star rating do I need?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Most states now require a minimum 7-star NatHERS rating for new homes under NCC 2022, though some councils and the Whole of Home framework may require more. We'll confirm the exact target for your location." }
+      },
+      {
+        "@type": "Question",
+        "name": "Is NatHERS the same as BASIX?",
+        "acceptedAnswer": { "@type": "Answer", "text": "No. NatHERS is a national thermal performance rating; BASIX is a broader NSW-specific assessment covering energy, water and thermal comfort. A NatHERS assessment can be used to satisfy BASIX's thermal comfort requirement." }
+      },
+      {
+        "@type": "Question",
+        "name": "Does a renovation need a NatHERS assessment?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Major renovations and extensions often need an assessment of the altered area, depending on your state and council requirements. Send us your plans and we'll confirm." }
+      },
+      {
+        "@type": "Question",
+        "name": "How can I improve a low star rating?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Common improvements include better window glazing, increased ceiling and wall insulation, improved orientation of glazing, and external shading. We'll recommend the most cost-effective combination for your design." }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does a NatHERS assessment take?",
+        "acceptedAnswer": { "@type": "Answer", "text": "With complete plans, most assessments are completed within a few business days. Let us know your deadline and we'll confirm a turnaround when you request your quote." }
+      }
+    ]
   }
   </script>
 
@@ -369,243 +398,90 @@
     <li><a href="/blog/index.html">Blog</a></li>
     <li><a href="/contact.html" class="nav-cta">Get a Quote</a></li>
   </ul>
-  <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+  <button class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">
     <span></span><span></span><span></span>
   </button>
 </nav>
 
 <main>
-
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-photo"></div>
-    <div class="hero-content">
-      <div class="hero-badge">Accredited ESD Consultants</div>
-      <h1>Building Better.<br>Living <em>Greener</em>.<br>Certified Faster.</h1>
-      <p>Thermal Nest delivers fast, accurate BASIX, NatHERS and ESD compliance certificates for architects, designers and developers.</p>
-      <div class="hero-actions">
-        <a href="/contact.html" class="btn-primary" >Get a Free Quote →</a>
-        <a href="/services/index.html" class="btn-secondary">Our Services</a>
-      </div>
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <p class="breadcrumb"><a href="/index.html">Home</a> / <a href="/services/index.html">Services</a> / NatHERS Assessment</p>
+      <h1>NatHERS Assessments, Nationwide</h1>
+      <p class="page-hero-lead">NatHERS rates how well your home's design retains comfortable temperatures, on a scale of 0 to 10 stars. It's required for new homes and major renovations across every Australian state and territory.</p>
+      <div class="page-hero-badges"><span>Nationwide</span><span>Nationwide Coverage</span></div>
     </div>
-    <div class="hero-scroll"><span>Scroll</span><div class="hero-scroll-line"></div></div>
   </section>
 
-  <!-- WHO WE ARE -->
-  <div class="who-section">
-    <div class="who-content reveal">
-      <span class="section-label">Who We Are</span>
-      <h2 class="section-title">Australia's Trusted ESD Compliance Partner</h2>
-      <p>Thermal Nest is a nationally accredited ESD (Ecologically Sustainable Development) consultancy helping architects, building designers, developers, and homeowners meet Australia's evolving energy compliance requirements — efficiently and accurately.</p>
-      <p>With hundreds of projects delivered across every state and territory, our accredited assessors understand the nuances of local planning frameworks, NCC requirements, and council-specific expectations. Whether you're building your first home or managing a large residential development, we make compliance simple.</p>
-      <p>We work directly with your design team from early stages to ensure your project is set up for success — no reworks, no surprises, no delays.</p>
-      <div class="who-pills">
-        <span class="who-pill">New Homes</span>
-        <span class="who-pill">Duplex</span>
-        <span class="who-pill">Townhouses</span>
-        <span class="who-pill">Renovations</span>
-      </div>
-    </div>
-    <div class="who-photo reveal" style="transition-delay:0.15s">
-      <img src="/office-lady.png" alt="ESD consultant working in office" loading="lazy" />
-      <div class="who-photo-badge">
-        <div class="who-photo-badge-icon">🏅</div>
-        <div>
-          <strong>Nationally Accredited</strong>
-          <span>ESD Consultants Australia</span>
-        </div>
-      </div>
-    </div>
-  </div>
+  <section class="prose-section">
 
-  <!-- HOW IT WORKS -->
-  <section style="background:var(--cream)">
-    <div class="reveal">
-      <span class="section-label">Simple Process</span>
-      <h2 class="section-title">Certified in 3 Easy Steps</h2>
-      <p class="section-sub">No jargon. No delays. We handle the complexity so you can focus on your project.</p>
-    </div>
-    <div class="steps-grid">
-      <div class="step-card reveal" style="transition-delay:0.1s">
-        <div class="step-num">01</div>
-        <h3>Submit Your Plans</h3>
-        <p>Upload your architectural drawings and project details through our simple enquiry form. We'll review and respond within hours.</p>
+      <h2>What Is a NatHERS Assessment?</h2>
+      <p>The Nationwide House Energy Rating Scheme (NatHERS) measures the thermal performance of your home's building fabric -- walls, roof, floor and windows -- independent of any heating or cooling appliances. Using accredited software (AccuRate or FirstRate5), an assessor models your design against your specific climate zone and orientation to produce a star rating from 0 to 10.</p>
+      <p>The higher the rating, the less energy your home will need to stay comfortable year-round. Most Australian states now require a minimum 7-star NatHERS rating for new homes under the National Construction Code (NCC 2022), up from the previous 6-star minimum.</p>
+
+      <h2>Who Needs a NatHERS Assessment?</h2>
+      <ul>
+        <li><strong>New home builds</strong> -- required in every state and territory before construction approval</li>
+        <li><strong>Major renovations and extensions</strong> -- where thermal performance of the altered area is assessed</li>
+        <li><strong>Multi-unit developments</strong> -- townhouses, duplexes and apartments each need individual ratings</li>
+        <li><strong>NSW projects choosing the NatHERS pathway</strong> -- as an alternative to the BASIX prescriptive method for thermal comfort</li>
+      </ul>
+
+      <h2>How We Deliver It</h2>
+      <p>Send through your floor plans, elevations, window schedule and site details, and we'll model your design in accredited software to determine your star rating. If your design falls short of the target, we'll identify the most cost-effective changes -- often glazing specification, insulation, or shading -- to get you there without over-engineering the build.</p>
+      <p>Because we're accredited to operate nationwide, we understand how climate zone data and council requirements shift from Sydney to Perth to regional Queensland, so your rating is calculated correctly the first time.</p>
+
+      <div class="info-band">
+        <h3>Pricing</h3>
+        <p>NatHERS pricing varies by dwelling size and complexity. Get in touch for a same-day, no-obligation quote.</p>
+        <a href="/contact.html" class="btn-outline-dark">Get a Free Quote &rarr;</a>
       </div>
-      <div class="step-card reveal" style="transition-delay:0.2s">
-        <div class="step-num">02</div>
-        <h3>We Run the Assessment</h3>
-        <p>Our accredited assessors complete your BASIX, NatHERS or ESD report — accurately and on time, every time.</p>
+
+      <h2>Why Work With Thermal Nest</h2>
+      <p>We're accredited to operate in every Australian state and territory, so whether your project is in Sydney, Melbourne, Brisbane, Perth or regional Australia, you get the same turnaround and the same standard of report. Across 500+ projects, every certificate and report we've issued has been accepted on first submission -- no rejections, no rounds of council back-and-forth eating into your build timeline.</p>
+      <p>We also work with your design team from early in the process rather than only stepping in once drawings are locked. Catching a compliance issue at concept stage costs a conversation; catching it after a DA is lodged costs a redesign. That's the gap we're built to close.</p>
+
+  </section>
+
+  <section class="faq-section">
+    <div class="faq-inner">
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <div class="faq-item">
+        <h3>What star rating do I need?</h3>
+        <p>Most states now require a minimum 7-star NatHERS rating for new homes under NCC 2022, though some councils and the Whole of Home framework may require more. We'll confirm the exact target for your location.</p>
       </div>
-      <div class="step-card reveal" style="transition-delay:0.3s">
-        <div class="step-num">03</div>
-        <h3>Receive Your Certificate</h3>
-        <p>Your compliance certificate is delivered digitally, ready to submit with your DA or CDC application. It's that simple.</p>
+      <div class="faq-item">
+        <h3>Is NatHERS the same as BASIX?</h3>
+        <p>No. NatHERS is a national thermal performance rating; BASIX is a broader NSW-specific assessment covering energy, water and thermal comfort. A NatHERS assessment can be used to satisfy BASIX's thermal comfort requirement.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Does a renovation need a NatHERS assessment?</h3>
+        <p>Major renovations and extensions often need an assessment of the altered area, depending on your state and council requirements. Send us your plans and we'll confirm.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How can I improve a low star rating?</h3>
+        <p>Common improvements include better window glazing, increased ceiling and wall insulation, improved orientation of glazing, and external shading. We'll recommend the most cost-effective combination for your design.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How long does a NatHERS assessment take?</h3>
+        <p>With complete plans, most assessments are completed within a few business days. Let us know your deadline and we'll confirm a turnaround when you request your quote.</p>
       </div>
     </div>
   </section>
 
-  <!-- WHY CHOOSE US -->
-  <div class="why-section">
-    <div class="reveal">
-      <span class="section-label">Why Thermal Nest</span>
-      <h2 class="section-title">The Thermal Nest Advantage</h2>
-      <p class="section-sub">We've built our reputation on speed, accuracy, and genuine expertise. Here's what sets us apart.</p>
-    </div>
-    <div class="why-grid">
-      <div class="why-card reveal" style="transition-delay:0.1s">
-        <div class="why-icon">🇦🇺</div>
-        <h3>Nationwide Coverage</h3>
-        <p>Accredited to operate in every state and territory. Sydney, Melbourne, Brisbane, Perth or regional Australia — we've got you covered.</p>
-      </div>
-      <div class="why-card reveal" style="transition-delay:0.15s">
-        <div class="why-icon">⚡</div>
-        <h3>Same Day Quote</h3>
-        <p>Submit your enquiry and receive a detailed, transparent quote the same day. No waiting, no guesswork — just clear pricing so your project can move forward.</p>
-      </div>
-      <div class="why-card reveal" style="transition-delay:0.2s">
-        <div class="why-icon">🤝</div>
-        <h3>Design-Stage Collaboration</h3>
-        <p>We embed early in your design process to identify compliance risks before they become costly problems.</p>
-      </div>
-      <div class="why-card reveal" style="transition-delay:0.25s">
-        <div class="why-icon">📋</div>
-        <h3>All Services Under One Roof</h3>
-        <p>BASIX, NatHERS, Whole of Home, SDA and BESS — all from one accredited team nationwide.</p>
-      </div>
-      <div class="why-card reveal" style="transition-delay:0.3s">
-        <div class="why-icon">🏆</div>
-        <h3>100% Approval Rate</h3>
-        <p>Every certificate we issue is right the first time. Our track record across 500+ projects — zero rejections, zero reworks.</p>
-      </div>
-      <div class="why-card reveal" style="transition-delay:0.35s">
-        <div class="why-icon">✅</div>
-        <h3>Council Ready Reports</h3>
-        <p>Every report we deliver is formatted and structured to meet council submission requirements — no back-and-forth, no additional revisions needed.</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- BLOG CAROUSEL -->
-  <div class="blog-carousel-section">
-    <div class="carousel-header reveal">
-      <div>
-        <span class="section-label">From the Blog</span>
-        <h2 class="section-title">Latest Insights</h2>
-        <p class="section-sub">Expert articles on BASIX, NatHERS, NCC updates and sustainable design — published weekly.</p>
-      </div>
-      <a href="/blog/index.html" class="btn-outline-dark"  style="flex-shrink:0">View All Articles →</a>
-    </div>
-    <div class="carousel-track-wrap">
-      <div class="carousel-track">
-        <!-- Set 1 -->
-        <div class="carousel-card" onclick="window.location.href='/blog/what-is-basix.html'">
-          <div class="carousel-thumb">🏡</div>
-          <div class="carousel-body">
-            <div class="carousel-meta"><span class="carousel-cat">BASIX</span><span class="carousel-date">April 2025</span></div>
-            <h3>What Is BASIX and Why Does Your Home Need It?</h3>
-            <p>Building or renovating in NSW? Here's everything you need to know about BASIX — in plain English.</p>
-            <a href="/blog/what-is-basix.html" class="carousel-read">Read →</a>
-          </div>
-        </div>
-        <div class="carousel-card" onclick="window.location.href='/blog/index.html'">
-          <div class="carousel-thumb carousel-thumb-2">🌡️</div>
-          <div class="carousel-body">
-            <div class="carousel-meta"><span class="carousel-cat">NatHERS</span><span class="carousel-date">Coming Soon</span></div>
-            <h3>NatHERS vs BASIX: What's the Difference and Do You Need Both?</h3>
-            <p>A plain-English breakdown of two certificates constantly confused.</p>
-            <a href="/blog/index.html" class="carousel-read" >Read →</a>
-          </div>
-        </div>
-        <div class="carousel-card" onclick="window.location.href='/blog/index.html'">
-          <div class="carousel-thumb carousel-thumb-3">⚡</div>
-          <div class="carousel-body">
-            <div class="carousel-meta"><span class="carousel-cat">NCC 2022</span><span class="carousel-date">Coming Soon</span></div>
-            <h3>NCC 2022 Whole of Home: Is Your Project Ready?</h3>
-            <p>The Whole of Home pathway is now mandatory. Here's what to expect.</p>
-            <a href="/blog/index.html" class="carousel-read" >Read →</a>
-          </div>
-        </div>
-        <div class="carousel-card" onclick="window.location.href='/blog/index.html'">
-          <div class="carousel-thumb carousel-thumb-4">🌿</div>
-          <div class="carousel-body">
-            <div class="carousel-meta"><span class="carousel-cat">ESD</span><span class="carousel-date">Coming Soon</span></div>
-            <h3>Sustainable Design Assessments: When Does Your Project Need One?</h3>
-            <p>Not every project needs an SDA — but many do. Here's how to know.</p>
-            <a href="/blog/index.html" class="carousel-read" >Read →</a>
-          </div>
-        </div>
-        <div class="carousel-card" onclick="window.location.href='/blog/index.html'">
-          <div class="carousel-thumb carousel-thumb-5">🏢</div>
-          <div class="carousel-body">
-            <div class="carousel-meta"><span class="carousel-cat">BESS</span><span class="carousel-date">Coming Soon</span></div>
-            <h3>BESS Reports Explained: A Developer's Guide to Getting It Right</h3>
-            <p>Everything you need to know before your BESS assessment.</p>
-            <a href="/blog/index.html" class="carousel-read" >Read →</a>
-          </div>
-        </div>
-        <!-- Set 2 (duplicate for seamless loop) -->
-        <div class="carousel-card" onclick="window.location.href='/blog/what-is-basix.html'">
-          <div class="carousel-thumb">🏡</div>
-          <div class="carousel-body">
-            <div class="carousel-meta"><span class="carousel-cat">BASIX</span><span class="carousel-date">April 2025</span></div>
-            <h3>What Is BASIX and Why Does Your Home Need It?</h3>
-            <p>Building or renovating in NSW? Here's everything you need to know about BASIX — in plain English.</p>
-            <a href="/blog/what-is-basix.html" class="carousel-read">Read →</a>
-          </div>
-        </div>
-        <div class="carousel-card" onclick="window.location.href='/blog/index.html'">
-          <div class="carousel-thumb carousel-thumb-2">🌡️</div>
-          <div class="carousel-body">
-            <div class="carousel-meta"><span class="carousel-cat">NatHERS</span><span class="carousel-date">Coming Soon</span></div>
-            <h3>NatHERS vs BASIX: What's the Difference and Do You Need Both?</h3>
-            <p>A plain-English breakdown of two certificates constantly confused.</p>
-            <a href="/blog/index.html" class="carousel-read" >Read →</a>
-          </div>
-        </div>
-        <div class="carousel-card" onclick="window.location.href='/blog/index.html'">
-          <div class="carousel-thumb carousel-thumb-3">⚡</div>
-          <div class="carousel-body">
-            <div class="carousel-meta"><span class="carousel-cat">NCC 2022</span><span class="carousel-date">Coming Soon</span></div>
-            <h3>NCC 2022 Whole of Home: Is Your Project Ready?</h3>
-            <p>The Whole of Home pathway is now mandatory. Here's what to expect.</p>
-            <a href="/blog/index.html" class="carousel-read" >Read →</a>
-          </div>
-        </div>
-        <div class="carousel-card" onclick="window.location.href='/blog/index.html'">
-          <div class="carousel-thumb carousel-thumb-4">🌿</div>
-          <div class="carousel-body">
-            <div class="carousel-meta"><span class="carousel-cat">ESD</span><span class="carousel-date">Coming Soon</span></div>
-            <h3>Sustainable Design Assessments: When Does Your Project Need One?</h3>
-            <p>Not every project needs an SDA — but many do. Here's how to know.</p>
-            <a href="/blog/index.html" class="carousel-read" >Read →</a>
-          </div>
-        </div>
-        <div class="carousel-card" onclick="window.location.href='/blog/index.html'">
-          <div class="carousel-thumb carousel-thumb-5">🏢</div>
-          <div class="carousel-body">
-            <div class="carousel-meta"><span class="carousel-cat">BESS</span><span class="carousel-date">Coming Soon</span></div>
-            <h3>BESS Reports Explained: A Developer's Guide to Getting It Right</h3>
-            <p>Everything you need to know before your BESS assessment.</p>
-            <a href="/blog/index.html" class="carousel-read" >Read →</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- CTA -->
-  <section class="cta-section">
-    <div class="reveal">
-      <span class="section-label">Ready to Start?</span>
-      <h2 class="section-title">Get Your Certificate Today</h2>
-      <p class="section-sub" style="margin:0 auto 2.5rem">Fast, affordable, and 100% compliant. Let's get your project moving.</p>
-      <a href="/contact.html" class="btn-dark" >Request a Free Quote →</a>
-    </div>
+  <section class="related-links">
+    <h3>Related Services</h3>
+    <ul>
+      <li><a href="/services/basix-certificate.html">BASIX Certificate</a></li>
+      <li><a href="/services/whole-of-home-assessment.html">Whole of Home (WoH) Assessment</a></li>
+    </ul>
   </section>
 
-
-
-
+  <section class="cta-band">
+    <h2>Ready to Get Started?</h2>
+    <p>Same-day quotes, accredited assessors, no surprises. Tell us about your project and we'll get back to you within one business day.</p>
+    <a href="/contact.html" class="btn-primary">Request a Free Quote &rarr;</a>
+  </section>
 </main>
 
 <footer>
@@ -630,7 +506,6 @@
       <h4>Company</h4>
       <ul>
         <li><a href="/index.html">Home</a></li>
-        <li><a href="/about.html">About</a></li>
         <li><a href="/services/index.html">Services</a></li>
         <li><a href="/blog/index.html">Blog</a></li>
         <li><a href="/contact.html">Contact</a></li>
@@ -639,32 +514,9 @@
   </div>
   <div class="footer-bottom">
     <p>© 2026 Thermal Nest. All rights reserved.</p>
-    <p>Accredited ESD Consultants — Nationwide Australia</p>
+    <p>Accredited ESD Consultants -- Nationwide Australia</p>
   </div>
 </footer>
-
-
-<script>
-  window.addEventListener('scroll', () => {
-    const nav = document.getElementById('navbar');
-    if (nav) nav.classList.toggle('scrolled', window.scrollY > 30);
-  });
-  let menuOpen = false;
-  function toggleMenu() {
-    menuOpen = !menuOpen;
-    const links = document.querySelector('.nav-links');
-    links.style.cssText = menuOpen
-      ? 'display:flex;flex-direction:column;position:absolute;top:72px;left:0;right:0;background:rgba(248,244,236,0.98);padding:1.5rem 5%;backdrop-filter:blur(16px);border-bottom:1px solid rgba(82,183,136,0.15);gap:1rem;'
-      : 'display:none';
-  }
-  function initReveal() {
-    const obs = new IntersectionObserver(entries => {
-      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-    }, { threshold: 0.08 });
-    document.querySelectorAll('.reveal').forEach(el => { el.classList.remove('visible'); obs.observe(el); });
-  }
-  document.addEventListener('DOMContentLoaded', initReveal);
-</script>
 
 </body>
 </html>
