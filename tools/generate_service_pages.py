@@ -249,7 +249,7 @@ SERVICES = [
         "schema_description": "Accredited BASIX certificate assessments for new homes, renovations and multi-dwelling developments across NSW.",
         "h1": "BASIX Certificate Consultants, NSW-Wide",
         "lead": "Every new home, granny flat and major renovation in NSW needs a BASIX certificate before a DA or CDC can be lodged. We deliver accurate, fully compliant certificates in as little as 48 hours.",
-        "related": ["nathers-assessment", "whole-of-home-assessment"],
+        "related": ["nathers-assessment", "basix-certificate-sydney"],
         "body": """
       <h2>What Is a BASIX Certificate?</h2>
       <p>BASIX (Building Sustainability Index) is a NSW Government requirement that's been part of the planning process since 2004. It confirms that your home or renovation meets minimum targets for thermal comfort, energy efficiency and water conservation before council will accept your Development Application (DA) or Complying Development Certificate (CDC).</p>
@@ -297,7 +297,7 @@ SERVICES = [
         "schema_description": "Nationwide House Energy Rating Scheme (NatHERS) thermal performance assessments for residential projects across Australia.",
         "h1": "NatHERS Assessments, Nationwide",
         "lead": "NatHERS rates how well your home's design retains comfortable temperatures, on a scale of 0 to 10 stars. It's required for new homes and major renovations across every Australian state and territory.",
-        "related": ["basix-certificate", "whole-of-home-assessment"],
+        "related": ["basix-certificate", "nathers-assessor-sydney"],
         "body": """
       <h2>What Is a NatHERS Assessment?</h2>
       <p>The Nationwide House Energy Rating Scheme (NatHERS) measures the thermal performance of your home's building fabric -- walls, roof, floor and windows -- independent of any heating or cooling appliances. Using accredited software (AccuRate or FirstRate5), an assessor models your design against your specific climate zone and orientation to produce a star rating from 0 to 10.</p>
@@ -473,6 +473,98 @@ SERVICES = [
              "Yes -- your BESS report needs to reflect what's on your current architectural drawings, so material design changes should be re-checked against the scorecard."),
             ("Can you handle BESS and Sustainable Design Assessment together?",
              "Yes, many Victorian projects need both. We can prepare them together so your evidence and assumptions stay consistent across both reports."),
+        ],
+    },
+    {
+        "slug": "nathers-assessor-sydney",
+        "name": "NatHERS Assessor Sydney",
+        "badge": "Sydney-Wide",
+        "service_type": "NatHERS Assessment",
+        "title": "NatHERS Assessor Sydney | Thermal Nest",
+        "description": "Accredited NatHERS assessor covering Greater Sydney. Same-day quotes, fast turnaround, 7-star ratings for new homes and renovations.",
+        "schema_description": "Accredited NatHERS star rating assessments for new homes, renovations and multi-dwelling developments across Greater Sydney.",
+        "h1": "NatHERS Assessor, Sydney",
+        "lead": "Every new home and major renovation across Greater Sydney needs a NatHERS star rating under NCC 2022. We're accredited assessors delivering accurate ratings with a same-day quote.",
+        "related": ["basix-certificate-sydney", "whole-of-home-assessment"],
+        "body": """
+      <h2>NatHERS Assessments for Sydney Projects</h2>
+      <p>Most new homes and major renovations across Sydney now need a minimum 7-star NatHERS rating under NCC 2022, whether you're building in the Inner West, the Northern Beaches, or out toward Penrith and the Hawkesbury. We model your design in accredited software (AccuRate or FirstRate5) against the correct climate data for your specific location and produce the star rating your council and certifier need to see.</p>
+      <p>Climate matters more than people expect here. Western Sydney suburbs run noticeably hotter through summer than the coastal and inner-city areas, which changes what actually works in a design -- glazing choice, insulation levels and shading that suit a Bondi renovation won't necessarily be the right call for a new build in Penrith. We factor your specific location's climate data into the assessment rather than applying a one-size-fits-all Sydney average.</p>
+
+      <h2>Who Needs a NatHERS Rating in Sydney?</h2>
+      <ul>
+        <li><strong>New home builds</strong> -- required before construction approval, anywhere across Greater Sydney</li>
+        <li><strong>Knockdown-rebuilds</strong> -- a common project type across established Sydney suburbs with ageing housing stock</li>
+        <li><strong>Major renovations and extensions</strong> -- where the altered area needs its own thermal assessment</li>
+        <li><strong>Townhouse, duplex and apartment developments</strong> -- increasingly common across Sydney's middle-ring suburbs, each dwelling assessed individually</li>
+      </ul>
+
+      <h2>How We Deliver It</h2>
+      <p>Send through your floor plans, elevations, window schedule and site details and we'll respond with a same-day quote. Once we have complete plans, most Sydney assessments are turned around within a few business days. If your design falls short of the target rating, we'll recommend the most cost-effective fix for your specific suburb's climate -- often glazing, insulation or shading -- rather than an expensive blanket upgrade.</p>
+
+      <div class="info-band">
+        <h3>Pricing</h3>
+        <p>NatHERS pricing for Sydney projects varies by dwelling size and complexity. Get in touch for a same-day, no-obligation quote.</p>
+        <a href="/contact.html" class="btn-outline-dark">Get a Free Quote &rarr;</a>
+      </div>
+""",
+        "faq": [
+            ("Does my star rating requirement change depending on where in Sydney I'm building?",
+             "The minimum rating (typically 7 stars under NCC 2022) is generally consistent, but what it takes to achieve that rating changes with your local climate. Western Sydney's hotter summers usually need different glazing and shading choices than coastal or inner-city Sydney."),
+            ("Is NatHERS the same as BASIX?",
+             "No. NatHERS is a national thermal performance rating for the building fabric; BASIX is a broader NSW-specific assessment covering energy, water and thermal comfort, and is required for every Sydney project alongside or instead of a standalone NatHERS assessment. We handle both together."),
+            ("Do Sydney apartments and townhouses need individual NatHERS ratings?",
+             "Yes -- each dwelling in a multi-unit development typically needs its own rating, even within the same building."),
+            ("How long does a NatHERS assessment take for a Sydney project?",
+             "With complete plans, most assessments are completed within a few business days. Let us know your DA deadline and we'll confirm a turnaround with your quote."),
+            ("Can you assess a renovation in an established Sydney suburb?",
+             "Yes -- knockdown-rebuilds and major renovations are some of the most common projects we assess across Sydney's established suburbs. Send us your plans and we'll confirm what's required."),
+        ],
+    },
+    {
+        "slug": "basix-certificate-sydney",
+        "name": "BASIX Certificate Sydney",
+        "badge": "DA & CDC Required",
+        "service_type": "BASIX Certificate",
+        "title": "BASIX Certificate Consultant Sydney | Thermal Nest",
+        "description": "Accredited BASIX certificates for Sydney new builds, renovations and duplexes. 48-hour turnaround, same-day quotes, 100% approval rate.",
+        "schema_description": "Accredited BASIX certificate assessments for new homes, renovations and multi-dwelling developments across Greater Sydney.",
+        "h1": "BASIX Certificate Consultant, Sydney",
+        "lead": "Every Sydney council requires a BASIX certificate before a DA or CDC will be accepted. We deliver accurate, fully compliant certificates for Sydney projects in as little as 48 hours.",
+        "related": ["nathers-assessor-sydney", "whole-of-home-assessment"],
+        "body": """
+      <h2>BASIX Certificates for Sydney Councils</h2>
+      <p>BASIX applies the same way across every council in Greater Sydney -- from the City of Sydney to Blacktown, Sutherland Shire to the Northern Beaches -- because it's a NSW Government requirement administered through the state's Planning Portal, not set by individual councils. What changes from project to project isn't the rules, it's the plans: a terrace renovation in the Inner West faces different constraints than a new knockdown-rebuild in Western Sydney, and we work with both regularly.</p>
+      <p>An accredited assessor enters your project details -- location, floor area, orientation, insulation, glazing, appliances and water fixtures -- into the BASIX tool, which calculates whether your design meets the required targets. If it does, the certificate is issued. If it doesn't, we'll tell you exactly what to change to get there.</p>
+
+      <h2>Who Needs a BASIX Certificate in Sydney?</h2>
+      <ul>
+        <li><strong>New homes</strong> -- single-storey, double-storey, knockdown-rebuilds and custom builds, common across established Sydney suburbs</li>
+        <li><strong>Granny flats and secondary dwellings</strong> -- a fast-growing project type across Sydney given local housing pressure, required over 60m&sup2;</li>
+        <li><strong>Major renovations</strong> -- alterations and additions valued over $50,000, from terrace extensions to full rebuilds</li>
+        <li><strong>Duplexes, townhouses and multi-dwelling developments</strong> -- increasingly common across Sydney's middle-ring suburbs</li>
+      </ul>
+
+      <h2>How We Deliver It</h2>
+      <p>Send us your architectural drawings and we'll respond with a same-day quote, wherever in Sydney your project sits. Our accredited assessors then run the assessment and issue your certificate, typically within 48 hours of receiving complete plans -- with urgent same-day options available when your DA deadline is tight.</p>
+
+      <div class="info-band">
+        <h3>Pricing</h3>
+        <p>BASIX pricing for Sydney projects depends on dwelling type and project complexity. Get in touch for a same-day, no-obligation quote tailored to your plans.</p>
+        <a href="/contact.html" class="btn-outline-dark">Get a Free Quote &rarr;</a>
+      </div>
+""",
+        "faq": [
+            ("Does BASIX work differently between Sydney councils?",
+             "No -- BASIX is a NSW Government scheme administered through the state Planning Portal, so the requirement itself is consistent across every Sydney council. What differs is your specific site and design, which is what we assess."),
+            ("Do I need a BASIX certificate for a granny flat in Sydney?",
+             "Standalone granny flats and secondary dwellings over 60 square metres need a BASIX certificate. Given how common granny flats have become across Sydney, this catches a lot of projects -- send us your plans and we'll confirm."),
+            ("How long does a BASIX certificate take for a Sydney project?",
+             "With complete architectural drawings, we typically issue your certificate within 48 hours. Same-day turnaround is available for urgent DA deadlines."),
+            ("Can you handle a knockdown-rebuild in an established Sydney suburb?",
+             "Yes, knockdown-rebuilds are one of the most common project types we assess across Sydney's established suburbs."),
+            ("What's the difference between BASIX and NatHERS for my Sydney project?",
+             "BASIX is the broader NSW-specific assessment covering energy, water and thermal comfort; NatHERS is the national thermal performance rating that can satisfy BASIX's thermal comfort requirement. We deliver both together when needed."),
         ],
     },
 ]
